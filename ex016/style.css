@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /*crindo degrades */
+    background-image: linear-gradient(to right, #F1D8C9, #F2C3A7);
+}
+
+main {
+    background-color: #fff;
+    width: 600px;
+    box-shadow: 5px 5px 15px #68544983; /* lado, baixo, espalhamento, cor*/
+    padding: 10px;
+    margin: auto; /* margin auto centralisa o conteudo */
+    border-radius: 10px;
+}
+
+h1{
+   color:  #F39209;
+   text-align: center;
+   text-shadow: 1px 1px 0px #6f4406ad ;
+}
+
+h2{
+    color: #125189;
+}
+p {
+    text-align: justify;
+}
