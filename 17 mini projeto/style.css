@@ -53,7 +53,7 @@ aside {
     padding: 2px;
 }
 
-aside>h2 {
+aside>h3 {
     background-color: #3BD47F;
     color: white;
     padding: 6px;
@@ -70,4 +70,8 @@ footer>p {
     color: white;
     margin: 0px;
     text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: #2e2e40e7;
 }
