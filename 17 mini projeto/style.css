@@ -1,77 +1,64 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('./font/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-header {
     margin: 0px;
-    color: white;
-    background-image: linear-gradient(#3BD47F, #217245);
-}
-
-header>h1,
-p {
-    text-align: center;
-}
-body>nav{
-    background-color: #217245;
-}
-body>nav>a {
-    text-decoration: none;
-    color: white;
-    padding: 6px;
-    font-weight: bolder;
-    
-}
-
-p {
-    text-align: justify;
+    padding: 0px;
 }
 
 body {
-    /*background-color: #84E1AD;*/
-    background-color: #c5ebd6;
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
 }
-ul > div {
-    display: inline-block;
-    padding-inline: 100px;
-} 
+header{
+    background-color: var(--cor4);
+}
+header>h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-destaque);
+}
+header > p{
+    color: white;
+}
+nav{
+    background-color: var(--cor5);
+}
 
-body>main {
+main{
     background-color: white;
-    width: 800px;
-    padding: 10px;
-    margin: auto;
 }
 
-aside {
-
-    background-color: rgba(128, 128, 128, 0.252);
-    border-radius: 10px;
-    padding: 2px;
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
 }
 
-aside>h3 {
-    background-color: #3BD47F;
+main h2{
+    font-family: var(--fonte-android);
+}
+
+footer{
+    background-color: var(--cor5);
     color: white;
-    padding: 6px;
-    margin-top: 0px;
-    border-radius: 10px 10px 0px 0px;
 }
 
-footer {
-    background-color: #217245;
-    padding: 5px;
-}
-
-footer>p {
-    color: white;
-    margin: 0px;
-    text-align: center;
-}
-footer a{
-    text-decoration: none;
-    color: #2e2e40e7;
-}
